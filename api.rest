@@ -1,0 +1,30 @@
+###
+GET http://localhost:4000/employees
+
+###
+POST  http://localhost:4000/employees
+Content-Type: application/json
+
+{
+    "name": "Nicolas Erazo",
+    "position": "Ingeniero",
+    "office": "Colombia",
+    "salary": "700"
+}
+
+###
+GET  http://localhost:4000/employees/6420988e90108cd6f373d211
+
+###
+DELETE http://localhost:4000/employees/6420988e90108cd6f373d211
+
+###
+PUT http://localhost:4000/employees/6420a558398bf78b25b8290e
+Content-Type: application/json
+
+{
+    "name": "Nicolas Erazo Arce",
+    "position": "Ingeniero",
+    "office": "Colombia",
+    "salary": "1000"
+}
