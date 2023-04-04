@@ -4,11 +4,11 @@ const jwt = require('jsonwebtoken');
 
 const employeesCtrl = require('../controllers/employeesCtrl')
 
-router.get('/employees', verifyToken, employeesCtrl.getEmployees);
-router.post('/employees', verifyToken, employeesCtrl.createEmployee);
-router.get('/employees/:id', verifyToken, employeesCtrl.getEmployee);
-router.put('/employees/:id', verifyToken, employeesCtrl.editEmployee);
-router.delete('/employees/:id', verifyToken, employeesCtrl.deleteEmployee);
+router.get('/employees', employeesCtrl.getEmployees);
+router.post('/employees', employeesCtrl.createEmployee);
+router.get('/employees/:id', employeesCtrl.getEmployee);
+router.put('/employees/:id', employeesCtrl.editEmployee);
+router.delete('/employees/:id', employeesCtrl.deleteEmployee);
 
 module.exports = router;
 
