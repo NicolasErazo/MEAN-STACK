@@ -15,5 +15,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use(require('./routes/employees.routes'));
+app.use(require('./routes/users.routes'));
 
 module.exports = app;
+
+//npm init -y = Package.json
+//npm install express - mongoose - cors - jsonwebtoken
+//npm install nodemon -D

@@ -28,3 +28,23 @@ Content-Type: application/json
     "office": "Colombia",
     "salary": "1000"
 }
+
+###
+POST  http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "email": "Nicolas Erazo",
+    "password": "Nicolas1"
+}
+
+###
+POST  http://localhost:4000/register
+Content-Type: application/json
+
+{
+    "name": "Nicolas Erazo",
+    "username": "ALONE",
+    "email": "nico.lacho@outlook.com",
+    "password": "Nicolas1"
+}
